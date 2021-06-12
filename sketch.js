@@ -6,6 +6,10 @@ var game
 var pokemonName
 var form
 var syncImg
+var database
+var playerCount
+var secretWord
+var player1,player2
 
 function preload(){
 
@@ -23,6 +27,7 @@ syncImg=loadImage("images/syncImage.jpeg")
 
 function setup() {
   createCanvas(displayWidth,displayHeight-150);
+  database=firebase.database()
 game=new Game()
 form=new Form()
 

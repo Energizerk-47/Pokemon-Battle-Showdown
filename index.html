@@ -3,8 +3,29 @@
     <script src="library/p5.dom.min.js"></script>
     <script src="library/p5.sound.min.js"></script>
 <script src="library/p5.play.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDsewiCMEjzwDvy4NxmC5zotl_K8hELnC0",
+    authDomain: "pokemon-1962b.firebaseapp.com",
+    databaseURL: "https://pokemon-1962b-default-rtdb.firebaseio.com",
+    projectId: "pokemon-1962b",
+    storageBucket: "pokemon-1962b.appspot.com",
+    messagingSenderId: "178469017268",
+    appId: "1:178469017268:web:d160c5c6cb0479a45c29e1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 <script src="Game.js"></script>
 <script src="form.js"></script>
+<script src="player.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
 
