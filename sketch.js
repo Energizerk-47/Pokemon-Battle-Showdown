@@ -10,6 +10,7 @@ var database
 var playerCount
 var secretWord
 var player1,player2
+var selectImage
 
 function preload(){
 
@@ -18,7 +19,7 @@ player2Image=loadImage("images/Goh_PJ.png")
 startImage=loadImage("images/StartImage.jpg")
 pokemonName=loadImage("images/titletext.png")
 syncImg=loadImage("images/syncImage.jpeg")
-
+selectImage=loadImage("images/backgroundSelection.jpg")
 }
 
 
@@ -47,5 +48,9 @@ game.start()
 game.sync()
 
    }
+    if(gameState ==="select"){
+game.select()
+
+    }
   drawSprites();
 }

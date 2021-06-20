@@ -1,0 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+.selectButton{ 
+  background-image: url("https://www.nicepng.com/png/detail/121-1215880_file-card-back-mystery-mystery-card-back.png"); 
+  background-size: cover; 
+  border: 5px solid #020202; 
+}

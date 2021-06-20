@@ -18,7 +18,11 @@ form.start()
         form.sync()
 
     }
-    select(){}
+    select(){
+        image(selectImage,0,0,displayWidth,displayHeight-150)
+form.hide()
+form.select()
+    }
     play(){}
     end(){}
 
@@ -33,6 +37,16 @@ form.start()
             secretWord: word,
           });
     }
+
+
+    updateState(state){ 
+        database.ref('/').update({ gameState: state, });
+     } 
+    getState(){
+        
+        database.ref('gameState').on("value",
+         (data) => { gameState = data.val(); }); 
+        }
     static createSecretWord(){
         var pass = '';
         var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 
